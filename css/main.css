@@ -1,0 +1,103 @@
+:root {
+    --dark-color:#19283f;
+    --green-color:#33d1cc;
+    --red-color:#ff3150;
+    --red-light-color:#fe697f;
+    --yellow-color:#ffc400;
+    --section-color:#eff7fa;
+}
+
+body {
+    font-family: 'Roboto',sans-serif;
+    height: 10000px;
+}
+
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link.show {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+    color: var(--green-color);
+}
+
+.navbar .search {
+    border-left: var(--green-color) 1px solid;
+}
+
+.navbar .search svg {
+    color: var(--green-color);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none!important;
+}
+
+.navbar .navbar-toggler[aria-expanded='true'] {
+    border-color: var(--green-color)!important;
+}
+
+.landing {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+    color:white;
+}
+
+.main-btn{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+}
+
+.main-btn:hover,
+.main-btn:active {
+    background-color: var(--red-light-color);
+    color: var(--yellow-color);
+}
+
+.main-title::after{
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position:absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder {
+    height: 200px;
+}
+
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.features .icon-holder .icon {
+    color: var(--green-color);
+}
+
+.features .feat h4 {
+    color: var(--yellow-color);
+}
